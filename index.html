@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SaleSwiftDesk - POS Desktop untuk UMKM Indonesia</title>
+    <meta
+      name="description"
+      content="SaleSwiftDesk adalah aplikasi POS desktop offline-first untuk toko, cafe, restoran, warung, dan gym. Mendukung stok, struk, printer thermal, laporan, membership, dan lisensi."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="SaleSwiftDesk">
+        <img src="./logo.png" alt="" />
+        <span><strong>SaleSwift</strong>Desk</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#fitur">Fitur</a>
+        <a href="#jenis-usaha">Jenis Usaha</a>
+        <a href="#install">Cara Install</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="beranda" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">POS desktop offline-first</p>
+          <h1>SaleSwiftDesk</h1>
+          <p class="hero-lead">
+            Aplikasi kasir lokal untuk toko, cafe, restoran, warung makan, dan gym.
+            Tetap berjalan tanpa internet, lengkap dengan stok, printer thermal,
+            laporan, membership, dan lisensi production.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#install">Cara Install</a>
+            <a class="button secondary" href="#fitur">Lihat Fitur</a>
+          </div>
+          <div class="trust-row" aria-label="Ringkasan keunggulan">
+            <span>SQLite lokal</span>
+            <span>Tanpa internet</span>
+            <span>Printer ESC/POS</span>
+            <span>Aktivasi .lic</span>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Preview dashboard POS">
+          <img src="pict.png" alt="SaleSwiftDesk Dashboard Preview" class="hero-image" />
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Toko Aktif</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Transaksi/Hari</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-label">Uptime</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="fitur" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Fitur lengkap</p>
+          <h2>Semua yang dibutuhkan toko Anda</h2>
+          <p>
+            SaleSwiftDesk dirancang untuk memenuhi kebutuhan operasional berbagai
+            jenis usaha — dari toko retail, cafe, restoran, hingga gym.
+            Semua fitur berjalan offline di perangkat Anda.
+          </p>
+        </div>
+
+        <div class="feature-tabs" data-feature-tabs>
+          <button class="feature-tab active" data-tab="pos">POS & Pembayaran</button>
+          <button class="feature-tab" data-tab="produk">Produk & Stok</button>
+          <button class="feature-tab" data-tab="pelanggan">Pelanggan & Membership</button>
+          <button class="feature-tab" data-tab="kasir">Kasir & Shift</button>
+          <button class="feature-tab" data-tab="laporan">Laporan & Riwayat</button>
+          <button class="feature-tab" data-tab="pengaturan">Pengaturan & Printer</button>
+          <button class="feature-tab" data-tab="keamanan">Keamanan & Lisensi</button>
+        </div>
+
+        <!-- POS & Pembayaran -->
+        <div class="feature-panel active" data-panel="pos">
+          <div class="feature-panel-header">
+            <h3>Point of Sale & Pembayaran</h3>
+            <p>Kasir cepat dengan berbagai metode pembayaran untuk semua jenis transaksi.</p>
+          </div>
+          <div class="feature-detail-grid">
+            <div class="feature-detail-card">
+              <div class="feature-icon">🛒</div>
+              <h4>Keranjang Cepat</h4>
+              <p>Klik produk langsung masuk keranjang. Atur jumlah dengan tombol plus/minus. Diskon per item dan diskon transaksi.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔍</div>
+              <h4>Pencarian & Barcode</h4>
+              <p>Cari produk berdasarkan nama, SKU, atau scan barcode. Mendukung barcode primer dan sekunder per produk.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">💵</div>
+              <h4>Pembayaran Tunai</h4>
+              <p>Masukkan jumlah uang diterima, sistem otomatis hitung kembalian. Cepat dan akurat.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📱</div>
+              <h4>QRIS Statis</h4>
+              <p>Tampilkan QR code merchant. Kasir konfirmasi setelah notifikasi pembayaran diterima.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">💳</div>
+              <h4>E-Wallet Multi-Akun</h4>
+              <p>GoPay, OVO, DANA, ShopeePay, LinkAja, dan lainnya. Admin daftarkan banyak akun, kasir pilih dari dropdown.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🏦</div>
+              <h4>Transfer Bank Multi-Rekening</h4>
+              <p>BCA, Mandiri, BRI, BNI, dan lainnya. Admin daftarkan banyak rekening, kasir pilih tujuan transfer.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">💰</div>
+              <h4>Diskon & Pajak</h4>
+              <p>Diskon per item (pre-tax) dan diskon transaksi. Pajak per produk dalam basis poin (misal 1100 = 11% PPN).</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🍽️</div>
+              <h4>Konteks Pesanan</h4>
+              <p>Untuk cafe/restoran: tipe pesanan (dine-in/takeaway), nomor meja, nama pelanggan. Cetak struk dan tiket dapur.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk & Stok -->
+        <div class="feature-panel" data-panel="produk">
+          <div class="feature-panel-header">
+            <h3>Produk, Kategori & Stok</h3>
+            <p>Kelola katalog produk, kategori, gambar, barcode, dan stok secara lengkap.</p>
+          </div>
+          <div class="feature-detail-grid">
+            <div class="feature-detail-card">
+              <div class="feature-icon">📦</div>
+              <h4>CRUD Produk</h4>
+              <p>Buat, edit, hapus (soft delete) produk. Field lengkap: SKU, nama, deskripsi, harga jual/beli, pajak, satuan, gambar.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🏷️</div>
+              <h4>Manajemen Barcode</h4>
+              <p>Banyak barcode per produk dengan flag primer. Scanner langsung temukan produk yang tepat.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📸</div>
+              <h4>Gambar Produk</h4>
+              <p>Upload gambar produk (maks 2 MB). Validasi MIME type. Tampilkan di POS untuk visual cepat.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📂</div>
+              <h4>Kategori Hierarki</h4>
+              <p>Kategori induk-anak dengan urutan sortir kustom. Filter produk berdasarkan kategori di POS.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📊</div>
+              <h4>Stok & Pergerakan</h4>
+              <p>Tracking stok per produk. Setiap perubahan dicatat: penjualan, refund, pembelian, penyesuaian, stok opname, kerusakan.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">⚠️</div>
+              <h4>Alert Stok Rendah</h4>
+              <p>Sistem peringatkan saat stok <= level reorder. Lihat daftar produk yang perlu restok.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📋</div>
+              <h4>Stok Opname</h4>
+              <p>Cocokkan stok sistem dengan stok fisik. Catat sesi opname, hitung selisih, dan riwayat lengkap.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔒</div>
+              <h4>Blokir Stok Habis</h4>
+              <p>POS otomatis blokir transaksi yang akan menyebabkan stok negatif. Data konsisten selalu.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pelanggan & Membership -->
+        <div class="feature-panel" data-panel="pelanggan">
+          <div class="feature-panel-header">
+            <h3>Pelanggan & Membership</h3>
+            <p>Kelola data pelanggan, poin loyalitas, dan membership untuk gym/fitness.</p>
+          </div>
+          <div class="feature-detail-grid">
+            <div class="feature-detail-card">
+              <div class="feature-icon">👤</div>
+              <h4>CRUD Pelanggan</h4>
+              <p>Buat, edit, cari, hapus pelanggan. Field: nama, telepon, email, catatan, poin loyalitas.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔎</div>
+              <h4>Pencarian Pelanggan</h4>
+              <p>Cari berdasarkan nama atau nomor telepon. Temukan pelanggan dengan cepat saat transaksi.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">⭐</div>
+              <h4>Poin Loyalitas</h4>
+              <p>Poin per pelanggan, bisa diatur manual oleh admin. Dorong repeat purchase dari pelanggan setia.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📈</div>
+              <h4>Riwayat Transaksi</h4>
+              <p>Lihat semua transaksi pelanggan: invoice, jumlah, tanggal. Analisis perilaku belanja.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🏋️</div>
+              <h4>Membership Gym</h4>
+              <p>Status member: none, active, frozen, expired. Tanggal aktif dan expired per pelanggan.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">✅</div>
+              <h4>Check-in Member</h4>
+              <p>Rekam waktu check-in dan pelaku. Riwayat check-in lengkap di detail pelanggan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kasir & Shift -->
+        <div class="feature-panel" data-panel="kasir">
+          <div class="feature-panel-header">
+            <h3>Kasir & Shift Management</h3>
+            <p>Kelola akun kasir, shift kerja, dan keamanan sesi secara terintegrasi.</p>
+          </div>
+          <div class="feature-detail-grid">
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔐</div>
+              <h4>Login & Sesi</h4>
+              <p>Autentikasi username + password dengan Argon2id. Token sesi persistent, tidak perlu login ulang.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">👥</div>
+              <h4>3 Role: Admin, Manager, Kasir</h4>
+              <p>RBAC ketat di frontend dan backend. Admin: semua. Manager: operasional. Kasir: kasir dan riwayat sendiri.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">⏰</div>
+              <h4>Buka & Tutup Shift</h4>
+              <p>Kasir buka shift dengan kas awal. Tutup shift, sistem hitung kas harian dan variansi otomatis.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📊</div>
+              <h4>Rekap Shift</h4>
+              <p>Jumlah transaksi, penjualan kotor, kas masuk, kembalian, breakdown per metode pembayaran.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔄</div>
+              <h4>Fitur Opsional</h4>
+              <p>Admin bisa aktifkan/matikan fitur shift sesuai kebutuhan toko. Fleksibel untuk berbagai skenario.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📝</div>
+              <h4>Audit Log</h4>
+              <p>Setiap aksi penting tercatat: buat user, refund, ubah pengaturan. Filter berdasarkan aksi, entitas, atau aktor.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laporan & Riwayat -->
+        <div class="feature-panel" data-panel="laporan">
+          <div class="feature-panel-header">
+            <h3>Laporan & Riwayat Transaksi</h3>
+            <p>Analisis penjualan harian dan bulanan dengan berbagai metrik dan export.</p>
+          </div>
+          <div class="feature-detail-grid">
+            <div class="feature-detail-card">
+              <div class="feature-icon">📅</div>
+              <h4>Laporan Harian</h4>
+              <p>Jumlah transaksi, penjualan kotor, total diskon, total pajak, laba kotor. Tersedia untuk semua role.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📈</div>
+              <h4>Laporan Bulanan</h4>
+              <p>Ringkasan bulanan dengan breakdown harian. Tersedia untuk admin dan manager saja.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">💳</div>
+              <h4>Breakdown Metode Bayar</h4>
+              <p>Laporan per metode pembayaran: jumlah transaksi dan penjualan kotor. Analisis preferensi pembayaran.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">👤</div>
+              <h4>Breakdown Per Kasir</h4>
+              <p>Laporan per kasir: jumlah transaksi dan penjualan kotor. Evaluasi performa tim kasir.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🏆</div>
+              <h4>Produk Terlaris</h4>
+              <p>Daftar produk paling laris berdasarkan jumlah terjual dan pendapatan. Identifikasi produk unggulan.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📄</div>
+              <h4>Export CSV & PDF</h4>
+              <p>Export laporan ke CSV untuk analisis di Excel atau PDF untuk arsip cetak.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🕐</div>
+              <h4>Riwayat Transaksi</h4>
+              <p>Daftar transaksi dengan filter rentang tanggal. Detail lengkap: item, diskon, pajak, pembayaran, waktu.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔄</div>
+              <h4>Refund</h4>
+              <p>Refund penuh atau sebagian. Kembalikan stok otomatis. Hanya admin/manager yang bisa melakukan refund.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pengaturan & Printer -->
+        <div class="feature-panel" data-panel="pengaturan">
+          <div class="feature-panel-header">
+            <h3>Pengaturan & Printer Thermal</h3>
+            <p>Konfigurasi toko, pembayaran, printer, dan branding struk secara lengkap.</p>
+          </div>
+          <div class="feature-detail-grid">
+            <div class="feature-detail-card">
+              <div class="feature-icon">🏪</div>
+              <h4>Profil Toko</h4>
+              <p>Nama, alamat, telepon, email, website, NPWP, footer struk, logo. Semua tampil di struk.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🖼️</div>
+              <h4>Logo Toko</h4>
+              <p>Upload logo toko. Tampil di preview struk browser dan di struk hardware ESC/POS sebagai raster.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🧾</div>
+              <h4>Struk Thermal</h4>
+              <p>Preview 80mm monospace. Browser print dan hardware ESC/POS. Watermark lisensi di struk hardware.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🍳</div>
+              <h4>Tiket Dapur</h4>
+              <p>Cetak tiket dapur terpisah: item + jumlah + konteks pesanan. Untuk cafe/restoran.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🖨️</div>
+              <h4>Printer ESC/POS</h4>
+              <p>USB, Bluetooth SPP (Classic), Serial/COM, LAN/Wi-Fi port 9100. Auto-detect device dan port.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">⚙️</div>
+              <h4>Pengaturan Printer</h4>
+              <p>Lebar kolong (32/48), auto-cut, beep. Konfigurasi per transport. Test page untuk verifikasi.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📱</div>
+              <h4>Pengaturan QRIS</h4>
+              <p>Enable/disable, label, instruksi, upload gambar QR statis. Cashier tampilkan saat pembayaran QRIS.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">💳</div>
+              <h4>Pengaturan Pembayaran</h4>
+              <p>Multi-akun e-wallet dan multi-rekening transfer bank. Setiap akun punya toggle enable/disable.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keamanan & Lisensi -->
+        <div class="feature-panel" data-panel="keamanan">
+          <div class="feature-panel-header">
+            <h3>Keamanan & Lisensi</h3>
+            <p>Sistem keamanan berlapis dan lisensi offline untuk perlindungan aplikasi.</p>
+          </div>
+          <div class="feature-detail-grid">
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔐</div>
+              <h4>Argon2id</h4>
+              <p>Password hashing dengan Argon2id — standar keamanan terkini. Tidak ada password plaintext.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔑</div>
+              <h4>OS Keyring</h4>
+              <p>Lisensi disimpan di OS keyring (bukan plaintext di disk). Keamanan tingkat sistem operasi.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔒</div>
+              <h4>AES-GCM Encryption</h4>
+              <p>Pengaturan rahasia (API key, token) dienkripsi dengan AES-GCM. Aman di database lokal.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">📄</div>
+              <h4>Lisensi Offline</h4>
+              <p>Tidak perlu internet. Lisensi terikat fingerprint perangkat. File .lic dari vendor.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">⏰</div>
+              <h4>Grace Period</h4>
+              <p>Setelah expired, aplikasi tetap bisa diakses selama grace period yang dikonfigurasi.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🛡️</div>
+              <h4>Read-Only Mode</h4>
+              <p>Lisensi expired blokir transaksi baru tapi tetap bisa baca riwayat. Data tidak hilang.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">🔍</div>
+              <h4>Clock Tamper Detection</h4>
+              <p>Jika jam sistem dimundurkan, status lisensi jadi "tampered". Cegah manipulasi waktu.</p>
+            </div>
+            <div class="feature-detail-card">
+              <div class="feature-icon">💾</div>
+              <h4>Backup & Restore</h4>
+              <p>Backup database SQLite ke file. Restore dari backup. List semua backup dengan ukuran dan waktu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+            
+
+      <section id="jenis-usaha" class="section split">
+        <div>
+          <p class="eyebrow">Multi jenis usaha</p>
+          <h2>Cocok untuk retail, cafe, restoran, warung, jasa, dan gym</h2>
+          <p>
+            Profil toko dapat disesuaikan dengan jenis usaha. Untuk resto/cafe ada
+            makan di tempat, dibungkus, nomor meja, dan kitchen print. Untuk gym ada
+            membership aktif/expired dan check-in member.
+          </p>
+        </div>
+        <div class="business-list">
+          <button class="active" data-business="Retail">Toko / Retail</button>
+          <button data-business="Cafe">Cafe</button>
+          <button data-business="Restoran">Restoran</button>
+          <button data-business="Gym">Gym</button>
+          <button data-business="Jasa">Jasa</button>
+          <div class="business-card" data-business-card>
+            <h3>Toko / Retail</h3>
+            <p>Produk, stok, barcode, pembayaran cepat, laporan, dan struk thermal.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section section">
+        <div class="section-heading">
+          <p class="eyebrow">Testimoni</p>
+          <h2>Dipercaya oleh UMKM Indonesia</h2>
+          <p>
+            Lihat apa kata para pemilik toko yang sudah menggunakan SaleSwiftDesk
+            untuk operasional harian mereka.
+          </p>
+        </div>
+        <div class="testimonials">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "SaleSwiftDesk mengubah cara kami mengelola kasir. Sebelumnya pakai
+              buku tulis, sekarang semuanya digital dan bisa cetak struk langsung.
+              Sangat membantu!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RS</div>
+              <div class="testimonial-info">
+                <strong>Rina Susanti</strong>
+                <small>Pemilik Toko Serba Ada, Bandung</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Sebagai cafe kecil, kami butuh yang simpel tapi lengkap. SaleSwiftDesk
+              jawabannya. Fitur meja dan order kitchen sangat membantu operasional kami."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AP</div>
+              <div class="testimonial-info">
+                <strong>Andi Pratama</strong>
+                <small>Pemilik Kopi Santai, Jakarta</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Gym kami sekarang punya sistem membership yang terintegrasi. Member
+              bisa check-in langsung dari aplikasi. Admin juga lebih mudah generate
+              laporan bulanan."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MK</div>
+              <div class="testimonial-info">
+                <strong>Maya Kusuma</strong>
+                <small>Manajer FitLife Gym, Surabaya</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="install" class="section docs">
+        <div class="section-heading">
+          <p class="eyebrow">Cara install</p>
+          <h2>Instalasi sampai aplikasi aktif</h2>
+          <p>
+            Alur dibuat sederhana: download installer, import lisensi, lalu
+            langsung pakai.
+          </p>
+        </div>
+        <div class="docs-layout">
+          <aside class="docs-index">
+            <a href="#download">1. Download & Install</a>
+            <a href="#aktivasi">2. Import .lic</a>
+            <a href="#mulai">3. Setup Awal</a>
+          </aside>
+          <div class="docs-content">
+            <article id="download">
+              <h3>1. Download & Install Aplikasi</h3>
+              <p>
+                Hubungi vendor untuk mendapatkan file installer <strong>.msi</strong>
+                SaleSwiftDesk.
+              </p>
+              <ol>
+                <li>Download file installer <strong>.msi</strong> dari vendor.</li>
+                <li>Klik dua kali file installer untuk memulai instalasi.</li>
+                <li>Ikuti instruksi sampai selesai.</li>
+                <li>Buka aplikasi dari Desktop atau Start Menu.</li>
+                <li>Jika Windows menampilkan konfirmasi keamanan, pilih untuk melanjutkan.</li>
+              </ol>
+            </article>
+            <article id="aktivasi">
+              <h3>2. Import File Lisensi .lic</h3>
+              <p>
+                Saat pertama kali dibuka, SaleSwiftDesk akan meminta aktivasi.
+                Pilih file lisensi <strong>.lic</strong> yang diberikan vendor,
+                lalu klik aktivasi.
+              </p>
+              <div class="install-note">
+                <strong>Catatan:</strong> file <code>.lic</code> berbeda untuk setiap klien/perangkat.
+                Simpan file ini baik-baik untuk kebutuhan install ulang.
+              </div>
+            </article>
+            <article id="mulai">
+              <h3>3. Setup Awal Setelah Aktif</h3>
+              <ul>
+                <li>Buat akun admin pertama.</li>
+                <li>Isi profil toko, alamat, jenis usaha, dan logo.</li>
+                <li>Aktifkan metode pembayaran yang dipakai toko.</li>
+                <li>Tambah kategori, produk, foto produk, dan stok awal.</li>
+                <li>Atur printer thermal jika ingin cetak struk otomatis.</li>
+                <li>Buat transaksi percobaan untuk memastikan kasir siap digunakan.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Pertanyaan Umum</h2>
+          <p>
+            Jawaban untuk pertanyaan yang sering ditanyakan tentang SaleSwiftDesk.
+          </p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Apakah SaleSwiftDesk bisa digunakan tanpa internet?</button>
+            <div class="faq-answer">
+              Ya! SaleSwiftDesk dirancang sebagai aplikasi offline-first. Semua data
+              disimpan lokal di perangkat Anda. Transaksi, laporan, dan cetak struk
+              tetap berjalan meskipun tidak ada koneksi internet.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Printer thermal apa yang didukung?</button>
+            <div class="faq-answer">
+              SaleSwiftDesk mendukung printer thermal ESC/POS via USB, Bluetooth SPP
+              (Classic), Serial/COM, dan LAN/Wi-Fi port 9100. Kami juga menyediakan
+              simulator untuk testing tanpa printer fisik.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Bagaimana cara aktivasi lisensi?</button>
+            <div class="faq-answer">
+              Setelah install, buka aplikasi dan akan muncul halaman aktivasi. Pilih
+              file lisensi .lic yang diberikan vendor, lalu klik aktivasi. Lisensi
+              terikat dengan fingerprint perangkat untuk keamanan.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Apakah bisa untuk multiple toko?</button>
+            <div class="faq-answer">
+              Ya, setiap instalasi SaleSwiftDesk berjalan independen di satu perangkat.
+              Untuk multiple toko, Anda memerlukan lisensi terpisah untuk setiap
+              perangkat kasir.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Bagaimana dengan backup data?</button>
+            <div class="faq-answer">
+              SaleSwiftDesk memiliki fitur backup dan restore bawaan. Anda bisa
+              membackup database ke file dan mengembalikannya kapan saja jika
+              diperlukan.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak" class="cta-section">
+        <h2>Siap Untuk Digitalisasi Toko Anda?</h2>
+        <p>
+          Dapatkan <strong>demo gratis</strong>, bantuan instalasi, dan lisensi untuk
+          perangkat toko Anda. Hubungi kami sekarang dan mulai langkah pertama
+          menuju operasional yang lebih efisien.
+        </p>
+        <div class="hero-actions" style="justify-content: center; margin-top: 32px;">
+          <a class="button primary" href="https://wa.me/6285156145712?text=Halo,%20saya%20tertarik%20dengan%20SaleSwiftDesk" target="_blank" rel="noreferrer">
+            🚀 Mulai Sekarang
+          </a>
+          <a class="button secondary" href="#fitur">
+            📋 Lihat Fitur Lengkap
+          </a>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card wa" href="https://wa.me/6285156145712" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span>WhatsApp</span>
+            <small>0851-5614-5712</small>
+          </a>
+          <a class="contact-card tiktok" href="https://www.tiktok.com/@ini_bumblebee" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 005.58 2.18V2.44a4.84 4.84 0 01-2-.75z"/></svg>
+            <span>TikTok</span>
+            <small>@ini_bumblebee</small>
+          </a>
+          <a class="contact-card ig" href="https://www.instagram.com/dio_firman17" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <span>Instagram</span>
+            <small>@dio_firman17</small>
+          </a>
+          <a class="contact-card fb" href="https://www.facebook.com/profile.php?id=100021121723311" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span>Facebook</span>
+            <small>Dio Firman</small>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <strong>SaleSwift</strong>Desk
+          <p>POS desktop offline-first untuk UMKM Indonesia</p>
+        </div>
+        <div class="footer-links">
+          <a href="#fitur">Fitur</a>
+          <a href="#jenis-usaha">Jenis Usaha</a>
+          <a href="#install">Cara Install</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-contact">
+          <p>© 2024 SaleSwiftDesk. All rights reserved.</p>
+          <p>Dibuat dengan ❤️ untuk UMKM Indonesia</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
